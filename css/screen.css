@@ -1,3 +1,4 @@
+@charset "IBM866";
 @import url(/css/animate.css);
 /* line 17, c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
@@ -166,7 +167,7 @@ body {
 }
 /* line 81, ../sass/screen.sass */
 .project .detail {
-  background: none repeat scroll 0 0 white;
+  background: none repeat scroll 0 0 #eff0ef;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
@@ -215,5 +216,28 @@ body {
   height: 0px;
   border-top: 10px solid transparent;
   border-bottom: 0px solid transparent;
-  border-right: 25px solid white;
+  border-right: 25px solid gray;
+}
+
+/* верхнее меню */
+/* line 124, ../sass/screen.sass */
+nav {
+  text-align: center;
+}
+/* line 127, ../sass/screen.sass */
+nav ul li {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  background: none repeat scroll 0 0 grey;
+  -webkit-border-radius: 32px;
+  -moz-border-radius: 32px;
+  -ms-border-radius: 32px;
+  -o-border-radius: 32px;
+  border-radius: 32px;
+  margin: 10px 40px;
+  padding: 10px 30px;
 }

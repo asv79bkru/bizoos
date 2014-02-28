@@ -5,7 +5,14 @@ include('/data/data.php');
 
 <body>
 	<div class="main-container">
-		<nav></nav>
+		<nav>
+			<ul>
+				<li>Первый</li>
+				<li>Второй</li>
+				<li>Третий</li>
+				<li>Чевертый</li>
+			</ul>
+		</nav>
 		<article>
 		<?php foreach ($projects as $project):?>
 			<div class="project  animated bounceInLeft">

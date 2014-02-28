@@ -6,7 +6,7 @@ $projects = array(
 
 	"simbirsoft" => array(	
 		"name" => "simbirsoft",
-		"img" => $iDir.'prj2.jpg',
+		"img" => $iDir.'prj1.jpg',
 		"detail" => "detail info",
 		"preview" => "preview",
 		"class" => "class"

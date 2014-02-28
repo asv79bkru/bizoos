@@ -1,0 +1,219 @@
+@import url(/css/animate.css);
+/* line 17, c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, c:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* common styles */
+/* line 11, ../sass/screen.sass */
+body {
+  background: url(/img/sshhg2k.png);
+  background: url(/img/kevqyqi.png);
+  font-family: "Marmelad", sans-serif;
+}
+
+/* line 17, ../sass/screen.sass */
+.main-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* line 21, ../sass/screen.sass */
+.hidden {
+  display: none;
+}
+
+/* line 24, ../sass/screen.sass */
+.project {
+  position: relative;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  -webkit-border-radius: 125px;
+  -moz-border-radius: 125px;
+  -ms-border-radius: 125px;
+  -o-border-radius: 125px;
+  border-radius: 125px;
+  width: 250px;
+  -webkit-box-shadow: 0 0 10px 5px black;
+  -moz-box-shadow: 0 0 10px 5px black;
+  box-shadow: 0 0 10px 5px black;
+  margin: 50px;
+  z-index: 1;
+}
+/* line 37, ../sass/screen.sass */
+.project:hover {
+  width: 250px;
+  height: 250px;
+  cursor: pointer;
+  z-index: 20;
+}
+/* line 47, ../sass/screen.sass */
+.project img {
+  height: 250px;
+  width: 250px;
+  -webkit-border-radius: 125px;
+  -moz-border-radius: 125px;
+  -ms-border-radius: 125px;
+  -o-border-radius: 125px;
+  border-radius: 125px;
+}
+/* line 52, ../sass/screen.sass */
+.project .preview {
+  -webkit-border-radius: 125px;
+  -moz-border-radius: 125px;
+  -ms-border-radius: 125px;
+  -o-border-radius: 125px;
+  border-radius: 125px;
+  overflow: hidden;
+  opacity: 0.7;
+  -webkit-transition: opacity 1s;
+  -moz-transition: opacity 1s;
+  -o-transition: opacity 1s;
+  transition: opacity 1s;
+}
+/* line 58, ../sass/screen.sass */
+.project .preview:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+/* line 62, ../sass/screen.sass */
+.project .preview:hover .detail {
+  display: block;
+}
+/* line 65, ../sass/screen.sass */
+.project .preview:hover img {
+  width: 300px;
+  height: 300px;
+  -webkit-border-radius: 150px;
+  -moz-border-radius: 150px;
+  -ms-border-radius: 150px;
+  -o-border-radius: 150px;
+  border-radius: 150px;
+  -webkit-box-shadow: 0 0 10px 10px black;
+  -moz-box-shadow: 0 0 10px 10px black;
+  box-shadow: 0 0 10px 10px black;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  -webkit-transition: width 1s, height 1s;
+  -moz-transition: width 1s, height 1s;
+  -o-transition: width 1s, height 1s;
+  transition: width 1s, height 1s;
+}
+/* line 81, ../sass/screen.sass */
+.project .detail {
+  background: none repeat scroll 0 0 white;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 3px;
+  -moz-box-shadow: 0 0 3px;
+  box-shadow: 0 0 3px;
+  left: 80%;
+  padding: 20px;
+  position: absolute;
+  top: 10%;
+  z-index: 10;
+}
+/* line 93, ../sass/screen.sass */
+.project .detail.hidden:hover {
+  display: block;
+  cursor: default;
+}
+
+/* line 99, ../sass/screen.sass */
+.balloon {
+  position: absolute;
+  left: 40px;
+  top: 20px;
+  width: 200px;
+  height: auto;
+  background: white;
+  padding: 10px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  border-radius: 6px;
+}
+
+/* line 109, ../sass/screen.sass */
+.balloon:before {
+  content: "";
+  position: absolute;
+  left: -25px;
+  top: 50%;
+  margin-top: -10px;
+  display: block;
+  width: 0px;
+  height: 0px;
+  border-top: 10px solid transparent;
+  border-bottom: 0px solid transparent;
+  border-right: 25px solid white;
+}

@@ -1,0 +1,120 @@
+@import compass/reset
+@import compass/css3/border-radius
+@import compass/css3/box-shadow
+@import compass
+@import variables
+
+@import /css/animate.css
+
+/* common styles */
+
+body
+	background: url(/img/sshhg2k.png)	
+	background: url(/img/kevqyqi.png)
+
+	font-family: 'Marmelad', sans-serif
+
+.main-container
+	width: 80%
+	margin: 0 auto
+
+.hidden
+	display: none
+
+.project
+	position: relative
+	+inline-block
+	+border-radius($prjRad)
+	width: $prgWidth
+	$shadow: 0 0 10px 5px black, 13px -9px 6px lime, 13px 13px 6px red, -18px 12px 6px yellow, -7px -15px 6px blue
+	$shadow: 5px 5px rgb(0,0,0)
+	$shadow: 0 0 10px 5px black
+
+	+box-shadow($shadow)
+	margin: 50px
+	z-index: 1
+
+	&:hover
+		width: $prgWidth
+		height: $prgWidth
+		//+border-radius($prjRad*1.2)
+		cursor: pointer
+		z-index: 20
+
+		
+
+
+	img
+		height: $prgWidth
+		width: $prgWidth
+		+border-radius($prjRad)
+
+	.preview
+		+border-radius($prjRad)
+		overflow: hidden
+		opacity: 0.7
+		+transition(opacity 1s)
+
+		&:hover 
+			cursor: pointer
+			opacity: 1
+
+			& .detail
+				display: block
+
+			& img
+				width: $prgWidth*1.2
+				height: $prgWidth*1.2
+				+border-radius($prjRad*1.2)
+				$shadow: 0 0 10px 10px black
+
+				+box-shadow($shadow)
+
+				position: absolute
+				top: -10px
+				left: -10px
+				+transition(width 1s, height 1s)
+				
+				
+				
+
+	.detail 
+		background: none repeat scroll 0 0 #FFFFFF
+		+border-radius(5px)
+		+box-shadow(0 0 3px)
+		left: 80%
+		padding: 20px
+		position: absolute
+		top: 10%
+		z-index: 10
+
+		&.hidden			
+
+			&:hover
+				display: block
+				cursor: default
+				
+
+
+.balloon	
+	position: absolute 
+	left: 40px 
+	top: 20px
+	width: 200px 
+	height: auto
+	background: #fff 
+	padding: 10px
+	+border-radius(6px)  
+
+.balloon:before
+	content: ''
+	position: absolute 
+	left: -25px 
+	top: 50%
+	margin-top: -10px
+	display: block
+	width: 0px
+	height: 0px
+	border-top: 10px solid transparent
+	border-bottom: 0px solid transparent
+	border-right: 25px solid #fff

@@ -1,0 +1,21 @@
+{
+  "name": "www",
+  "version": "0.0.0",
+  "authors": [
+    "Kuznetsova Svetlana <svetlana.kuznetsova@simbirsoft.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.1.1",
+    "grunt-contrib-watch": "~0.5.3",
+    "jquery": "~2.1.0",
+    "grunt": "~0.4.2"
+  }
+}
